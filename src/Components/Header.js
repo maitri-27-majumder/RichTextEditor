@@ -8,8 +8,8 @@ const Header = ({ editorState }) => {
 
   return (
     <div className="header-container">
-      <div>Demo Editor By Maitri</div>
-      <div>
+      <div><h2>Text Editor by Maitri</h2></div>
+      <div className="button-container">
         <button onClick={saveData}>Save</button>
       </div>
     </div>

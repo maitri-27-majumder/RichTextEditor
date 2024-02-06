@@ -128,13 +128,15 @@ const RichTextEditor = ({ editorState, setEditorState }) => {
   };
   return (
     <div className="editor-container" onClick={focus}>
-      <Editor
+      <Editor 
+       
         editorState={editorState}
         onChange={onChange}
         ref={editorRef}
         spellCheck={true}
         customStyleMap={customStyleMap}
-      />
+        placeholder="Type # and press space for Heading OR type * and press space for bold OR ** and space for red line OR *** and space for underline"
+          />
     </div>
   );
 };
